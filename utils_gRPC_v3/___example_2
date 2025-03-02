@@ -1,0 +1,27 @@
+import grpc
+
+from configs.yandex_creds import API_KEY
+from yandex.cloud.ai.stt.v3 import stt_pb2, stt_service_pb2_grpc
+
+def recognize_file(uri: str):
+    request = stt_pb2.RecognizeFileRequest(
+        uri=uri,
+        recognition_model=stt_pb2.RecognitionModelOptions(
+            model='general',
+            audio_format=stt_pb2.AudioFormatOptions(
+                container_audio=stt_pb2.ContainerAudio(
+                    container_audio_type=stt_pb2.ContainerAudio.WAV
+                )
+            )
+        )
+    )
+
+    cred = grpc.ssl_channel_credentials()
+    chan = grpc.secure_channel('stt.api.cloud.yandex.net:443', cred)
+    stub = stt_service_pb2_grpc.AsyncRecognizerStub(chan)
+
+    # Выберите один из способов аутентификации:
+    # response = stub.RecognizeFile(request, metadata=[('authorization', 'Bearer <IAM-токен>')])
+    response = stub.RecognizeFile(request, metadata=[('authorization', f'Api-Key {API_KEY}')])
+
+    return response

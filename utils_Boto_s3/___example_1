@@ -1,0 +1,133 @@
+boto3 и boto
+
+— это комплекты средств разработки (SDK) для языков программирования Python 2.x и 3.x. SDK предназначены для работы с сервисами AWS.
+Подготовка к работе
+
+    Создайте сервисный аккаунт.
+    Назначьте сервисному аккаунту роли, которые нужны для вашего проекта, например storage.editor на бакет — для работы с конкретным бакетом, или на каталог — для работы со всеми бакетами в каталоге. Подробнее о ролях см. на странице Управление доступом с помощью Yandex Identity and Access Management.
+    Создайте статический ключ доступа.
+
+Примечание
+
+Сервисный аккаунт может просматривать список бакетов только в том каталоге, в котором он был создан.
+
+Сервисный аккаунт может выполнять действия с объектами в бакетах, которые созданы в каталогах, отличных от каталога сервисного аккаунта. Для этого назначьте сервисному аккаунту роли на нужный каталог или бакет в нем.
+Установка
+
+Примечание
+
+Object Storage поддерживает работу с boto3 версии 1.35.99 и ниже.
+
+Для установки boto3 версии 1.35.99 в терминале выполните команду:
+
+pip3 install boto3==1.35.99
+
+Подробнее об установке boto см. в репозитории разработчика: boto3, boto
+
+.
+Настройка
+
+    Создайте директорию для хранения аутентификационных данных и перейдите в нее:
+
+    Для macOS и Linux:
+
+    mkdir ~/.aws/
+
+Для Windows:
+
+mkdir C:\Users\<имя_пользователя>\.aws\
+
+В директории .aws создайте файл credentials с аутентификационными данными для Object Storage и скопируйте в него следующую информацию:
+
+[default]
+aws_access_key_id = <идентификатор_статического_ключа>
+aws_secret_access_key = <секретный_ключ>
+
+Создайте файл config с параметрами региона по умолчанию и скопируйте в него следующую информацию:
+
+[default]
+region = ru-central1
+endpoint_url = https://storage.yandexcloud.net
+
+    Примечание
+
+    Некоторые приложения, предназначенные для работы с Amazon S3, не позволяют указывать регион, поэтому Object Storage принимает также значение us-east-1.
+
+Для доступа к Object Storage используйте эндпоинт https://storage.yandexcloud.net.
+
+Пример
+
+boto3:
+
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+import boto3
+session = boto3.session.Session()
+s3 = session.client(
+    service_name='s3',
+    endpoint_url='https://storage.yandexcloud.net'
+)
+
+# Создать новый бакет
+s3.create_bucket(Bucket='bucket-name')
+
+# Загрузить объекты в бакет
+
+## Из строки
+s3.put_object(Bucket='bucket-name', Key='object_name', Body='TEST', StorageClass='COLD')
+
+## Из файла
+s3.upload_file('this_script.py', 'bucket-name', 'py_script.py')
+s3.upload_file('this_script.py', 'bucket-name', 'script/py_script.py')
+
+# Получить список объектов в бакете
+for key in s3.list_objects(Bucket='bucket-name')['Contents']:
+    print(key['Key'])
+
+# Удалить несколько объектов
+forDeletion = [{'Key':'object_name'}, {'Key':'script/py_script.py'}]
+response = s3.delete_objects(Bucket='bucket-name', Delete={'Objects': forDeletion})
+
+# Получить объект
+get_object_response = s3.get_object(Bucket='bucket-name',Key='py_script.py')
+print(get_object_response['Body'].read())
+
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+import os
+from boto.s3.key import Key
+from boto.s3.connection import S3Connection
+os.environ['S3_USE_SIGV4'] = 'True'
+conn = S3Connection(
+    host='storage.yandexcloud.net'
+)
+conn.auth_region_name = 'ru-central1'
+
+# Создать новый бакет
+conn.create_bucket('bucket-name')
+bucket = conn.get_bucket('bucket-name')
+
+# Загрузить объекты в бакет
+
+## Из строки
+bucket.new_key('test-string').set_contents_from_string('TEST')
+
+## Из файла
+file_key_1 = Key(bucket)
+file_key_1.key = 'py_script.py'
+file_key_1.set_contents_from_filename('this_script.py')
+file_key_2 = Key(bucket)
+file_key_2.key = 'script/py_script.py'
+file_key_2.set_contents_from_filename('this_script.py')
+
+# Получить список объектов в бакете
+keys_list=bucket.list()
+for key in keys_list:
+    print (key.key)
+
+# Удалить несколько объектов
+response = bucket.delete_keys(['test-string', 'py_script.py'])
+
+# Получить объект
+key = bucket.get_key('script/py_script.py')
+print (key.get_contents_as_string())
