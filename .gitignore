@@ -215,6 +215,9 @@ zTest
 /zExamples/*
 /zTest/*
 
+zTest*/
+zBackUp*/
+zExamples*/
 
 actions_results
 ___*.*
