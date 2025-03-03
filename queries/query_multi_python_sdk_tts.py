@@ -25,6 +25,7 @@ for file_name, answer_text in multi_data_for_tts.items():
         continue
 
 if validated_data:
+    print(f"All data validated [OK] before TTS synthesizing:\n\n")
     for file_name_no_ext, answer_text in multi_data_for_tts.items():
         text = answer_text.strip()
         file_name_no_ext = file_name_no_ext.strip()
