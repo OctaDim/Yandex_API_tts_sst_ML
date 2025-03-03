@@ -1,10 +1,11 @@
 from configs.settings import SDK_TTS_CONFIGS
-from configs.yandex_creds import API_KEY
-from queries.data_for_tts import file_name_no_ext, rich_text_for_tts
-from utils_Python_SDK.python_sdk_tts import synthesize_txt_to_wav_py_sdk
+from configs.yandex_credentials import API_KEY
+from queries.data_single_for_tts import file_name_no_ext, rich_text_for_tts
+from utils_Python_SDK.utilities_python_sdk_tts import synthesize_txt_to_wav_py_sdk
 from utilties_helpers.get_full_file_path import get_full_file_normal_path
 
 
+# One wav file TTS synthesising (do not delete!!!)
 text = rich_text_for_tts.strip()
 file_name_no_ext = file_name_no_ext.strip()
 file_name_with_ext = file_name_no_ext + ".wav"
