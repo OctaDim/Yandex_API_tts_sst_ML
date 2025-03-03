@@ -17,7 +17,7 @@ for file_name, answer_text in multi_data_for_tts.items():
         print(f"No file name [XXX]: file_name={file_name}\n")
         validated_data = False
         continue
-    if not file_name:
+    if not answer_text:
         print(f"No answer text [XXX]: "
               f"file_name={file_name}, "
               f"answer text={answer_text}\n")
