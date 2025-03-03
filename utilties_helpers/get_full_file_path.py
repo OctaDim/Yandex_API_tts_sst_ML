@@ -1,6 +1,6 @@
 import os
 
-from configs.yandex_creds import BASE_DIR
+from configs.yandex_credentials import BASE_DIR
 
 
 def get_full_file_normal_path(all_dirs_path: tuple[str],

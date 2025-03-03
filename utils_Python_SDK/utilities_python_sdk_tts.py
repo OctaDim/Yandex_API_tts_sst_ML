@@ -17,7 +17,7 @@ def synthesize_txt_to_wav_py_sdk(text_for_tts: str,
                                  ) -> None:
     if not iam_token and not api_key:
         print(f"Error: Define IAM-token or API-key: "
-              f"IAM={iam_token}, API={api_key}")
+              f"IAM={iam_token}, API={api_key}\n")
         return
 
     if not validate_dirs_file_path(file_export_path):
@@ -41,7 +41,7 @@ def synthesize_txt_to_wav_py_sdk(text_for_tts: str,
 
         file_name = os.path.basename(file_export_path)
         dir_name = os.path.dirname(file_export_path)
-        print(f"Result: File <{file_name}> created [OK]: {dir_name}")
+        print(f"\tResult: File <{file_name}> created [OK]: {dir_name}\n")
 
     except Exception as error:
-        print(f"Error: {error}")
+        print(f"Error: {error}\n")
