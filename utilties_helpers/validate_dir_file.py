@@ -15,10 +15,12 @@ def validate_dirs_file_path(full_path_file_name: str) -> bool:
         os.path.dirname(full_path_file_name)
 
         try:
-            os.makedirs(name=os.path.dirname(full_path_file_name),
-                        exist_ok=True)
             dir_name = os.path.dirname(full_path_file_name)
-            print(f"Directory created: {dir_name}\n")
+            if not os.path.exists(dir_name):
+                os.makedirs(
+                    name=os.path.dirname(full_path_file_name),
+                    exist_ok=True)
+                print(f"Directory created: {dir_name}\n")
             return True
         except Exception as error:
             print(f"Error: {error}\n")
