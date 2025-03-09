@@ -10,7 +10,10 @@ class SDK_TTS_CONFIGS:
     # ROLE: str = "neutral"  # 'good' can be as friendly
     SPEED: float = 1.05
     VOLUME: float = None
-    WAV_EXPORT_DIRS_PATH = "actions_results", "py_sdk_tts_wav_files"
+    WAV_EXPORT_DIRS_PATH = ("actions_results",
+                            "py_sdk_tts_wav_files", "Omsk")
+    # WAV_EXPORT_DIRS_PATH = ("actions_results",
+    #                         "py_sdk_tts_wav_files", "HMAO")
 
 
 @dataclass
@@ -22,7 +25,9 @@ class GRPC_V3_TTS_CONFIGS:
     # ROLE: str = "neutral"  # 'good' can be as friendly
     SPEED: float = 1.05
     VOLUME: float = None
-    WAV_EXPORT_DIRS_PATH = "actions_results", "grpc_v3_tts_wav_files"
+    WAV_EXPORT_DIRS_PATH = ("actions_results",
+                            "grpc_v3_tts_wav_files",
+                            "Omsk")
 
 
 @dataclass

@@ -1,8 +1,13 @@
 from configs.settings import SDK_TTS_CONFIGS
 from configs.yandex_credentials import API_KEY
-from queries.data_multi_for_tts import multi_data_for_tts
+from queries.HMAO_data_multi_for_tts import HMAO_multi_data_for_tts
+from queries.Omsk_data_multi_for_tts import Omsk_multi_data_for_tts
 from utils_Python_SDK.utilities_python_sdk_tts import synthesize_txt_to_wav_py_sdk
 from utilties_helpers.get_full_file_path import get_full_file_normal_path
+
+multi_data_for_tts = []
+multi_data_for_tts = Omsk_multi_data_for_tts
+# multi_data_for_tts = HMAO_multi_data_for_tts
 
 # Multi wav files TTS synthesising
 validated_data = True
