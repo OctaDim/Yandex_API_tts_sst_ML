@@ -2,37 +2,53 @@ from dataclasses import dataclass
 
 
 @dataclass
-class SDK_TTS_CONFIGS:
-    # volume, norm_type, unsafe_mode, language
-    VOICE: str = "filipp"
-    # VOICE: str = "alena"
-    ROLE: str = None  # 'good' can be as friendly
-    # ROLE: str = "neutral"  # 'good' can be as friendly
+class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
+    # OMSK (filipp, no intonation can be defined)
+    # VOICE: str = "filipp"
+    # ROLE: str = None
+    # SPEED: float = 1.05
+    # VOLUME: float = None
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "Omsk")
+
+
+    # HMAO (alena, intonation "neutral", can be 'good' as friendly)
+    VOICE: str = "alena"
+    ROLE: str = "neutral"
     SPEED: float = 1.05
     VOLUME: float = None
-    WAV_EXPORT_DIRS_PATH = ("actions_results",
-                            "py_sdk_tts_wav_files", "Omsk")
-    # WAV_EXPORT_DIRS_PATH = ("actions_results",
-    #                         "py_sdk_tts_wav_files", "HMAO")
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "questions_extra")
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "status")
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "appointment")
+    WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO")
+
+
+    # (alena, intonation "neutral", can be 'good' as friendly)
+    # VOICE: str = "alena"
+    # ROLE: str = "neutral"
+    # SPEED: float = 1.05
+    # VOLUME: float = None
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "ATTENTION_DEFINE_ROBOT_DIRECTORY")
 
 
 @dataclass
 class GRPC_V3_TTS_CONFIGS:
+    pass
     # volume, norm_type, unsafe_mode, language
-    VOICE: str = "filipp"
+    # VOICE: str = "filipp"  # Omsk_mfc
     # VOICE: str = "alena"
-    ROLE: str = None  # 'good' can be as friendly
-    # ROLE: str = "neutral"  # 'good' can be as friendly
-    SPEED: float = 1.05
-    VOLUME: float = None
-    WAV_EXPORT_DIRS_PATH = ("actions_results",
-                            "grpc_v3_tts_wav_files",
-                            "Omsk")
+    # ROLE: str = None  # for "filipp" no intonation can be defined
+    # ROLE: str = "neutral"  # for "alena" can be 'good' as friendly
+    # SPEED: float = 1.05
+    # VOLUME: float = None
+    # WAV_EXPORT_DIRS_PATH = ("actions_results",
+    #                         "grpc_v3_tts_wav_files",
+    #                         "Omsk")
 
 
 @dataclass
 class BOTO_V3_CONFIGS:
-    SERVICE_NAME: str = "s3"
-    ENDPOINT_URL: str = "https://storage.yandexcloud.net"
-    TO_STORAGE_PATH = "actions_results", "s3_to_storage_files"
-    FROM_STORAGE_PATH = "actions_results", "s3_from_storage_files"
+    pass
+    # SERVICE_NAME: str = "s3"
+    # ENDPOINT_URL: str = "https://storage.yandexcloud.net"
+    # TO_STORAGE_PATH = "actions_results", "s3_to_storage_files"
+    # FROM_STORAGE_PATH = "actions_results", "s3_from_storage_files"
