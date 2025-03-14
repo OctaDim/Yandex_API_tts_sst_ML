@@ -5,9 +5,10 @@ from queries.Omsk_data_multi_for_tts import Omsk_multi_data_for_tts
 from utils_Python_SDK.utilities_python_sdk_tts import synthesize_txt_to_wav_py_sdk
 from utilties_helpers.get_full_file_path import get_full_file_normal_path
 
-multi_data_for_tts = []
-multi_data_for_tts = Omsk_multi_data_for_tts
-# multi_data_for_tts = HMAO_multi_data_for_tts
+# multi_data_for_tts = Omsk_multi_data_for_tts  # In settings VOICE: str = "filipp"
+multi_data_for_tts = HMAO_multi_data_for_tts  # In settings VOICE: str = "alena"
+
+
 
 # Multi wav files TTS synthesising
 validated_data = True
@@ -47,3 +48,5 @@ if validated_data:
                                      role=SDK_TTS_CONFIGS.ROLE,
                                      speed=SDK_TTS_CONFIGS.SPEED,
                                      volume=SDK_TTS_CONFIGS.VOLUME)
+
+    print(f"TTS FINISHED SUCCESSFULLY [OK]:\n\n")
