@@ -16,10 +16,11 @@ class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
     ROLE: str = "neutral"
     SPEED: float = 1.05
     VOLUME: float = None
-    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "questions_extra")
+    WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "questions_extra")
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "sound_root_directory")
     # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "status")
     # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "appointment")
-    WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO")
+    # WAV_EXPORT_DIRS_PATH = ("actions_results", "py_sdk_tts_wav_files", "HMAO", "TEST-DELETE")
 
 
     # (alena, intonation "neutral", can be 'good' as friendly)
