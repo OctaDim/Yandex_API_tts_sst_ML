@@ -1,4 +1,4 @@
-HMAO_multi_data_for_tts = {
+WAV_TXT_ASSOC = {
     #     # ATTENTION: DIRECTORY: /hmao_vika/mfc/not_mfc_competency.wav
     #     "not_mfc_competency": """
     # Данный вопрос вне компетенции МФЦ. Благодарим за обращение, всего Вам доброго, до свидания.""",

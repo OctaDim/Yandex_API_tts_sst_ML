@@ -1,6 +1,6 @@
 # -*-coding=utf-8-*-
 
-# ATTENTION: FOR DIR: "/usr/local/sounds/all_files/mymedia/yoshkarola_tec1_data_reception/"
+# ATTENTION: FOR DIR: "/usr/local/sounds/all_files/mymedia/yoshkarola_tec1_counter_reception/"
 WAV_TXT_ASSOC = {
     "hello_counter_service": u"""
     Это сервис приема показаний приборов учета горячей воды АО ЙошкарОлинской ТЭЦ номер 1. 
