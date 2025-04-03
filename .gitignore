@@ -2,6 +2,7 @@ not_public/
 not_for_git/
 .idea/
 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -136,11 +137,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project config
+# Spyder project configs
 .spyderproject
 .spyproject
 
-# Rope project config
+# Rope project configs
 .ropeproject
 
 # mkdocs documentation
@@ -204,22 +205,33 @@ Media/
 .Back*
 .ToDo*
 .Test*
-Test*.py
-Example*.py
+.Note*
 
-zBackUp
-zExamples
-zTest
+zTest*.py
+zExample*.py
 
-/zBackUp/*
-/zExamples/*
-/zTest/*
-/zTestNotes/*
+zBackUp/
+zExamples/
+zTest/
+zNotes/
+zTestNotes
+
+zBackUp/*
+zExamples/*
+zTest/*
+zTestNotes/*
+zDoc/*
+zNotes/*
 
 zTest*/
 zTestNotes*/
 zBackUp*/
 zExamples*/
+zDoc*/
+zNotes*/
 
-actions_results
+audio_wav_results
 ___*.*
+
+
+/*vosk-models*/*
