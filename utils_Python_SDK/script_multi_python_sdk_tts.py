@@ -1,16 +1,19 @@
 from configs.settings import SDK_TTS_CONFIGS
 from configs.yandex_credentials import API_KEY
-from tts_data.HMAO_tts_data_multi import HMAO_multi_data_for_tts
-from tts_data.Omsk_tts_data_multi import Omsk_multi_data_for_tts
 
+# ХМАО ()
+# from tts_data.HMAO_tts_data_multi import WAV_TXT_ASSOC
+# ОМСК (omsk_mfc_robot)
+from tts_data.Omsk_tts_data_multi import WAV_TXT_ASSOC
 # Вычисление максимальной продолжительности wav файлов
-from tts_data.Common_Duration_tts_multi import WAV_TXT_ASSOC
+# from tts_data.Common_Duration_tts_multi import WAV_TXT_ASSOC
 # Йошкар-Ола (counter reception)
 # from tts_data.YoshkarOla_tec1_counter_reception_tts_multi import WAV_TXT_ASSOC
 # Йошкар-Ола (auto informer)
 # from tts_data.YoshkarOla_tec1_auto_informer_tts_multi import WAV_TXT_ASSOC
 # Йошкар-Ола (auto caller)
 # from tts_data.YoshkarOla_tec1_dept_auto_caller_tts_multi import WAV_TXT_ASSOC
+
 
 from utils_Python_SDK.utilities_python_sdk_tts import synthesize_txt_to_wav_py_sdk
 from utilties_helpers.get_full_file_path import get_full_file_normal_path
