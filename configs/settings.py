@@ -3,6 +3,13 @@ from dataclasses import dataclass
 
 @dataclass
 class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
+    # TEST ALENA (alena, intonation "neutral", can be 'good' as friendly)
+    # VOICE: str = "alena"
+    # ROLE: str = "neutral"
+    # SPEED: float = 1.05
+    # VOLUME: float = None
+    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "test_voice_robots")
+
     # OMSK (filipp, no intonation can be defined)
     VOICE: str = "filipp"
     ROLE: str = None
@@ -29,6 +36,7 @@ class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
     # ROLE: str = "neutral"
     # SPEED: float = 1.05
     # VOLUME: float = None
+    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "mfc")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "questions_extra")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "sound_root_directory")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "status")
