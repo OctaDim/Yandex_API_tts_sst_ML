@@ -1,41 +1,41 @@
 WAV_TXT_ASSOC = {
-        # ATTENTION: DIRECTORY: /hmao_vika/mfc/not_mfc_competency.wav
+        # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/not_mfc_competency.wav
 #         "possibly_can_help_ask": """
 #         Возможно я могу вам помочь? Задайте ваш вопрос
 # """,
 #
-#         # ATTENTION: DIRECTORY: /hmao_vika/mfc/unclear question_maybe_appointment.wav
+#         # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/unclear question_maybe_appointment.wav
 #         "unclear question_maybe_appointment": """
 #         Извините, я не поняла ваш вопрос. Вас записать на прием? Скажите ДА или НЕТ
 # """,
 
-        # ATTENTION: DIRECTORY: /hmao_vika/mfc/unclear question_maybe_appointment.wav
+        # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/unclear question_maybe_appointment.wav
         "ask_maybe_want_appointment": """
         Вас записать на прием? Скажите ДА или НЕТ
 """,
 
-        # ATTENTION: DIRECTORY: /hmao_vika/mfc/not_mfc_competency.wav
+        # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/not_mfc_competency.wav
     #     "not_mfc_competency": """
     # Данный вопрос вне компетенции МФЦ. Благодарим за обращение, всего Вам доброго, до свидания.""",
     #
     #
-    #     # ATTENTION: DIRECTORY: /hmao_vika/mfc/status/get_additional_status_info.wav
+    #     # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/status/get_additional_status_info.wav
     #     "get_additional_status_info": """
     # Дополнительно сообщаю, что проверить статус дела Вы можете на официальном сайте МФЦ ЮГРЫ ЭМФЭЦЭ точка АДЭЭМХМАО точка РУ или через чат-бот месенджера Телеграм СОБАКА ЮГРА ЭМФЭЦЭ нижнее  подчеркивание бот или вконтакте в сообществе ЭМФЭЦЭ ЮГРА
     # """,
     #
     #
-    #     # ATTENTION: DIRECTORY: /hmao_vika/mfc/appointment/ask_want_appointment.wav
+    #     # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/appointment/ask_want_appointment.wav
     #     "ask_want_appointment": """
     #     Вы хотите записаться на приём? Скажите ДА или НЕТ
     # """,
     #
-    #     # ATTENTION: DIRECTORY: /hmao_vika/mfc/not_recognised_end_call.wav
+    #     # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/not_recognised_end_call.wav
     #     "improper_answer_end_call": """
     # Извините, неподходящий ответ. Благодарим за обращение. Всего вам доброго! До свидания!
     # """,
 
-    # ATTENTION: DIRECTORY: /hmao_vika/mfc/questions_extra/
+    # ATTENTION: DIRECTORY: /hmao_vika/mfc (28.05.2025)-1 (28.05.2025)/questions_extra/
 #     "hello": """
 # Здравствуйте, Вас приветствует голосовой помощник Многофункционального центра ХМАО ЮГРЫ! В целях контроля качества разговор будет записан. Продолжая диалог, вы даете согласие на обработку персональных данных. Перед началом разговора отключите громкую связь.
 # Какой у Вас вопрос?

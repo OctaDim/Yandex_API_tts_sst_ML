@@ -1,5 +1,5 @@
-from configs.settings import GRPC_V3_TTS_CONFIGS
-from configs.yandex_credentials import API_KEY
+from configs_tts.settings import GRPC_V3_TTS_CONFIGS
+from configs_tts.yandex_credentials import API_KEY
 from tts_data.Omsk_tts_data_multi import file_name_no_ext, rich_text_for_tts
 from utils_gRPC_v3.utilities_grpc_v3_tts import synthesize_txt_to_wav_grps_v3
 from utilties_helpers.get_full_file_path import get_full_file_normal_path

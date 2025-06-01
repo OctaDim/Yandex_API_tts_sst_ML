@@ -1,7 +1,7 @@
 import boto3
 
-from configs.settings import BOTO_V3_CONFIGS
-from configs.yandex_credentials import (
+from configs_tts.settings import BOTO_V3_CONFIGS
+from configs_tts.yandex_credentials import (
     AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 
 

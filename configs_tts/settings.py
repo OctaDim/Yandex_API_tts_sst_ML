@@ -10,12 +10,22 @@ class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
     # VOLUME: float = None
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "test_voice_robots")
 
-    # OMSK (filipp, no intonation can be defined)
+
+    # KIROV (alena, intonation "neutral", can be 'good' as friendly)
+    # VOICE: str = "alena"
+    # ROLE: str = "neutral"
+    # SPEED: float = 1.05
+    # VOLUME: float = None
+    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "Kirov", "confirm_appointment")
+
+
+    # # OMSK (filipp, no intonation can be defined)
     VOICE: str = "filipp"
     ROLE: str = None
     SPEED: float = 1.05
     VOLUME: float = None
     WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "Omsk", "mfc")
+
 
     # YOSHKAROLA (alena, intonation "neutral", can be 'good' as friendly)
     # VOICE: str = "alena"
@@ -30,13 +40,12 @@ class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "common_duration_get")
 
 
-
     # HMAO (alena, intonation "neutral", can be 'good' as friendly)
     # VOICE: str = "alena"
     # ROLE: str = "neutral"
     # SPEED: float = 1.05
     # VOLUME: float = None
-    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "mfc")
+    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "mfc (28.05.2025)-1 (28.05.2025)")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "questions_extra")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "sound_root_directory")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "HMAO", "status")

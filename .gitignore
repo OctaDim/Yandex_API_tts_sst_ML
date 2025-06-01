@@ -137,11 +137,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project configs
+# Spyder project configs_tts
 .spyderproject
 .spyproject
 
-# Rope project configs
+# Rope project configs_tts
 .ropeproject
 
 # mkdocs documentation

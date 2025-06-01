@@ -3,9 +3,13 @@ import sys
 import os
 import wave
 
+from configs_tts.yandex_credentials import BASE_DIR
+
+
 def get_text_from_sound(audio_file):
     path_to_model = r"/stt_VOSK/models_vosk/vosk_model_ru_010_2_5GB/vosk-model-ru-0.10"
-    model = Model("path_to_vosk_model")
+    full_model_path = f"{BASE_DIR}{path_to_model}"
+    model = Model(full_model_path)
     wf = wave.open(audio_file, "rb")
     rec = KaldiRecognizer(model, wf.getframerate())
 
@@ -23,5 +27,5 @@ def get_text_from_sound(audio_file):
 
 if __name__ == "__main__":
     # audio_file = sys.argv[1]
-    audio_file_path= r"/stt_VOSK/models_vosk/vosk_model_ru_022_1_5GB/vosk-model-ru-0.22/decoder-test.wav"
+    audio_file_path = r"/stt_VOSK/models_vosk/vosk_model_ru_022_1_5GB/vosk-model-ru-0.22/decoder-test.wav"
     print(get_text_from_sound(audio_file_path))
