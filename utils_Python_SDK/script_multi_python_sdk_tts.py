@@ -5,13 +5,13 @@ from configs_tts.yandex_credentials import API_KEY
 # from tts_data.Test_tts_data_multi import WAV_TXT_ASSOC
 
 # # ХМАО ()
-# from tts_data.HMAO_tts_data_multi import WAV_TXT_ASSOC
+from tts_data.HMAO_tts_data_multi import WAV_TXT_ASSOC
 
 # # KIROV (confirm_appointment_robot.py)
 # from tts_data.Kirov_tts_data_multi import WAV_TXT_ASSOC
 
 # ОМСК (omsk_mfc_robot)
-from tts_data.Omsk_tts_data_multi import WAV_TXT_ASSOC
+# from tts_data.Omsk_tts_data_multi import WAV_TXT_ASSOC
 
 # # Вычисление максимальной продолжительности wav файлов
 # from tts_data.Common_Duration_tts_multi import WAV_TXT_ASSOC
@@ -30,8 +30,8 @@ from utils_Python_SDK.utilities_python_sdk_tts import synthesize_txt_to_wav_py_s
 from utilties_helpers.get_full_file_path import get_full_file_normal_path
 
 
-multi_data_for_tts = WAV_TXT_ASSOC  # In settings VOICE: str = "filipp" (Омск)
-# multi_data_for_tts = WAV_TXT_ASSOC  # In settings VOICE: str = "alena" (ХМАО)
+# multi_data_for_tts = WAV_TXT_ASSOC  # In settings VOICE: str = "filipp" (Омск)
+multi_data_for_tts = WAV_TXT_ASSOC  # In settings VOICE: str = "alena" (ХМАО)
 # multi_data_for_tts = WAV_TXT_ASSOC  # In settings VOICE: str = "alena"  (Йошкар-Ола)
 
 # Multi wav files TTS synthesising
