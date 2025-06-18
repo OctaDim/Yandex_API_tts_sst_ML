@@ -5,13 +5,13 @@ from configs_tts.yandex_credentials import API_KEY
 # from tts_data.Test_tts_data_multi import WAV_TXT_ASSOC
 
 # # ХМАО ()
-from tts_data.HMAO_tts_data_multi import WAV_TXT_ASSOC
+# from tts_data.HMAO_tts_data_multi import WAV_TXT_ASSOC
 
 # # KIROV (confirm_appointment_robot.py)
 # from tts_data.Kirov_tts_data_multi import WAV_TXT_ASSOC
 
 # ОМСК (omsk_mfc_robot)
-# from tts_data.Omsk_tts_data_multi import WAV_TXT_ASSOC
+from tts_data.Omsk_tts_data_multi import WAV_TXT_ASSOC
 
 # # Вычисление максимальной продолжительности wav файлов
 # from tts_data.Common_Duration_tts_multi import WAV_TXT_ASSOC
