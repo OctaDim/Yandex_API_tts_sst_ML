@@ -29,7 +29,7 @@ from configs_tts.yandex_credentials import API_KEY
 from tts_data.YoshkarOla_tec1_UL_dept_auto_caller_tts_multi import WAV_TXT_ASSOC
 
 # Йошкар-Ола (auto GP caller)
-from tts_data.YoshkarOla_tec1_GP_dept_auto_caller_tts_multi import WAV_TXT_ASSOC
+# from tts_data.YoshkarOla_tec1_GP_dept_auto_caller_tts_multi import WAV_TXT_ASSOC
 
 from utils_Python_SDK.utilities_python_sdk_tts import synthesize_txt_to_wav_py_sdk
 from utilties_helpers.get_full_file_path import get_full_file_normal_path

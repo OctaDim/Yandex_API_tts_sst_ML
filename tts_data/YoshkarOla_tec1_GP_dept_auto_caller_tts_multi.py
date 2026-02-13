@@ -1,42 +1,42 @@
 # ATTENTION: FOR DIR: "/usr/local/sounds/all_files/mymedia/yoshkarola_tec1_debt_auto_caller/"
 WAV_TXT_ASSOC = {
-    "hello_dept_part_1_GP": u"""
+    "hello_dept_part_1": u"""
     Здравствуйте. Это представитель Йошкар-Ол+инской ТЭЦ номер Один. Звоню сообщить, что по судебному делу номер:
 """,
 
-    "hello_dept_part_2_GP": u"""
+    "hello_dept_part_2": u"""
     имеется задолженность перед ТЭЦ номер Один по оплате государственной пошлины
 """,
 
-    "is_yours_address_GP": u"""
-    Уточните, имеете ли Вы отношение к указанному адресу?
+    "is_yours_address": u"""
+    Уточните, имеете ли Вы отношение к указанному номеру судебного дела?
 """,
 
-    "has_dept_by_address_GP": u"""
+    "has_dept_by_address": u"""
     имеется задолженность перед ТЭЦ номер Один по оплате государственной пошлины
 """,
 
-    "ask_to_pay_fast_GP": u"""
+    "ask_to_pay_fast": u"""
     Просим незамедлительно её оплатить. Вам известны способы оплаты?
 """,
 
-    "payment_ways_GP": u"""
+    "payment_ways": u"""
     Оплатить вы можете в кассах ТЭЦ Один. Более подробно о способах оплаты Вы можете узнать по телефону:
 """,
 
-    "sorry_bothering_bye_GP": u"""
+    "sorry_bothering_bye": u"""
     Извините за беспокойство. До свидания.
 """,
 
-    "thanks_wait_payment_GP": u"""
+    "thanks_wait_payment": u"""
     Спасибо за уделенное время, ждем оплату, до свидания.
 """,
 
-    "improper_answer_GP": u"""
+    "improper_answer": u"""
     Извините, это неподходящий ответ.
 """,
 
-    "good_bye_GP": u"""
+    "good_bye": u"""
     Благодарим за ваше внимание! До свидания!
 """,
 

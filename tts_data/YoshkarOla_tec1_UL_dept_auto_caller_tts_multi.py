@@ -1,42 +1,42 @@
 # ATTENTION: FOR DIR: "/usr/local/sounds/all_files/mymedia/yoshkarola_tec1_debt_auto_caller/"
 WAV_TXT_ASSOC = {
-    "hello_dept_part_1_UL": u"""
+    "hello_dept_part_1": u"""
     Здравствуйте. Это представитель Йошкар-Ол+инской ТЭЦ номер Один. Звоню сообщить, что по договору номер:
 """,
 
-    "hello_dept_part_2_UL": u"""
+    "hello_dept_part_2": u"""
     имеется задолженность перед ТЭЦ номер Один за отопление и горячую воду
 """,
 
-    "is_yours_address_UL": u"""
-    Уточните, имеете ли Вы отношение к указанному адресу?
+    "is_yours_address": u"""
+    Уточните, имеете ли Вы отношение к указанному договору?
 """,
 
-    "has_dept_by_address_UL": u"""
+    "has_dept_by_address": u"""
     имеется задолженность перед ТЭЦ номер Один за отопление и горячую воду
 """,
 
-    "ask_to_pay_fast_UL": u"""
+    "ask_to_pay_fast": u"""
     Просим незамедлительно её оплатить. Вам известны способы оплаты?
 """,
 
-    "payment_ways_UL": u"""
+    "payment_ways": u"""
     Оплатить вы можете по платежному документу, направленному в Ваш адрес. Более подробно о способах оплаты Вы можете узнать по телефону:
 """,
 
-    "sorry_bothering_bye_UL": u"""
+    "sorry_bothering_bye": u"""
     Извините за беспокойство. До свидания.
 """,
 
-    "thanks_wait_payment_UL": u"""
+    "thanks_wait_payment": u"""
     Спасибо за уделенное время, ждем оплату, до свидания.
 """,
 
-    "improper_answer_UL": u"""
+    "improper_answer": u"""
     Извините, это неподходящий ответ.
 """,
 
-    "good_bye_UL": u"""
+    "good_bye": u"""
     Благодарим за ваше внимание! До свидания!
 """,
 
