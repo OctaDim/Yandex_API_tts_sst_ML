@@ -32,8 +32,8 @@ class SDK_TTS_CONFIGS:  # volume, norm_type, unsafe_mode, language
     ROLE: str = "neutral"
     SPEED: float = 1.05
     VOLUME: float = None
-    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_GP_debt_auto_caller")
-    WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_UL_debt_auto_caller")
+    WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_GP_debt_auto_caller")
+    # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_UL_debt_auto_caller")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_debt_auto_caller")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_auto_informer")
     # WAV_EXPORT_DIRS_PATH = ("audio_wav_results", "py_sdk_tts_wav_files", "yoshkarola_tec1_counter_reception")
